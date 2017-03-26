@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+<meta charset="utf-8">
+<noscript><meta http-equiv="refresh" content="0; URL=http://m.meituan.com/?ndr"></noscript>
+<link rel="dns-prefetch" href="//mc.meituan.net">
+<link rel="dns-prefetch" href="//p0.meituan.net">
+<link rel="dns-prefetch" href="//p1.meituan.net">
+<link rel="dns-prefetch" href="//analytics.meituan.com">
+<script type="text/javascript">
+    (function() {
+        var isIPhone = window.navigator.appVersion.match(/iphone/gi);
+        var scale = 1.0;
+        var ratio = 1;
+        if (isIPhone && window.devicePixelRatio >= 2) {
+            scale *= 0.5;
+            ratio *= 2;
+        }
+        var text = '<meta name="viewport" content="initial-scale=' + scale + ', maximum-scale=' + scale +', minimum-scale=' + scale + ', width=device-width, user-scalable=no" />';
+        document.write(text);
+        document.documentElement.style.fontSize = 50 * ratio + "px";
+        var hiddenNavBar = /[?&]hidden_nav_bar=([^&]*)/.exec(location.search);
+        if(hiddenNavBar && Number(hiddenNavBar[1]) > 0) {
+            var classText = document.documentElement.className || '';
+            classText += ' notNavBar';
+            if (isIPhone) {
+                classText += ' ios'
+            }
+            document.documentElement.className = classText;
+        }
+    })();
+</script>
+<meta name="description" content="每天团购一次，精品消费指南">
+<link rel="icon" href="http://mc.meituan.net/touch/img/icon/favicon.ico" type="image/x-icon">
+<meta name="format-detection" content="telephone=no, address=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://mc.meituan.net/touch/img/startup/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://mc.meituan.net/touch/img/startup/apple-touch-icon-120x120-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="196x196" href="http://mc.meituan.net/touch/img/startup/apple-touch-icon-196x196-precomposed.png">
+<link rel="apple-touch-startup-image" media="(device-height:568px)" href="http://mc.meituan.net/touch/img/startup/apple-touch-startup-image-640x1096.png">
+<link rel="apple-touch-startup-image" media="(device-height:480px)" href="http://mc.meituan.net/touch/img/startup/apple-touch-startup-image-640x920.png">
+<script>
+var MT=MT||{};MT.pageData={pid:"",pc:"",sid:"hotel-fe-onlinestatic",st:1480121349171,cip:"58.60.255.111",setPC:function(e){if(e=e||"","[object Object]"===Object.prototype.toString.call(e)){var t=[];for(var a in e)t.push(a+"="+e[a]);this.pc=t.join("&")}else this.pc=e}},MT.TimeTracker={rt:1480121349171,st:Date.now()},window.addEventListener("load",function(){MT.TimeTracker.lt=Date.now()}),document.addEventListener("DOMContentLoaded",function(){MT.TimeTracker.dt=Date.now()}),MT.log={_logs:[],send:function(e,t,a){this._logs.push({type:e,value:t,sampling:a})}};
+</script>
+
+<script>
+    var isKuxun = function () {
+        var regex = new RegExp('[\\?&]train_source=([^&#]*)'),
+                results = regex.exec(location.search);
+        var hostStr = null ? '' : decodeURIComponent(results && results[1].replace(/\+/g, ' '));
+        var kxApp = ['kx@iphone', 'kx@android', 'kx@android_5.6', 'kx@wap'];
+        return hostStr && kxApp.some(function (item) {
+                    return hostStr.toLowerCase().indexOf(item) > -1;
+                });
+    };
+    var isOffline =  (function (){
+        var platform = 'h5';
+        var ua = navigator.userAgent || '';
+
+        if (!isKuxun() && ua.match(/iHotel/i)) {
+            if (ua.match(/iPhone|iPad/i)) {
+                platform = 'ios';
+            } else if (ua.match(/Android/i)) {
+                platform = 'android';
+            }
+        }
+
+        return platform !== 'h5';
+    })()
+</script>
+
+<script>
+!function(e,t,n){function s(){var e=t.createElement("script");e.async=!0,e.src="https://s0.meituan.net/bs/js/?f=mta-js:mta.min.js";var n=t.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)}if(e.MeituanAnalyticsObject=n,e[n]=e[n]||function(){(e[n].q=e[n].q||[]).push(arguments)},"complete"===t.readyState)s();else{var r="addEventListener",i="attachEvent";if(e[r])e[r]("load",s,!1);else if(e[i])e[i]("onload",s);else{var a=e.onload;e.onload=function(){s(),a&&a()}}}}(window,document,"mta"),function(e,t,n){if(t&&!("_mta"in t)){t._mta=!0;var s=e.location.protocol;if("file:"!==s){var r=e.location.host,i=t.prototype.open;t.prototype.open=function(t,n,a,o,h){if(this._method="string"==typeof t?t.toUpperCase():null,n){if(0===n.indexOf("http://")||0===n.indexOf("https://")||0===n.indexOf("//"))this._url=n;else if(0===n.indexOf("/"))this._url=s+"//"+r+n;else{var l=s+"//"+r+e.location.pathname;l=l.substring(0,l.lastIndexOf("/")+1),this._url=l+n}var u=this._url.indexOf("?");-1!==u?(this._searchLength=this._url.length-1-u,this._url=this._url.substring(0,u)):this._searchLength=0}else this._url=null,this._searchLength=0;return this._startTime=(new Date).getTime(),i.apply(this,arguments)};var a="onreadystatechange",o="addEventListener",h=t.prototype.send;t.prototype.send=function(t){function n(n,r){if(0!==n._url.indexOf(s+"//frep.meituan.net/_.gif")){for(var i="browser.ajax",a=[98,114,111,119,115,101,114,46,97,106,97,120],o=0,h=i.length;h>o;o++)if(i.charCodeAt(o)!==a[o])return;var l;if(n.response)switch(n.responseType){case"json":l=JSON&&JSON.stringify(n.response).length;break;case"blob":case"moz-blob":l=n.response.size;break;case"arraybuffer":l=n.response.byteLength;case"document":l=n.response.documentElement&&n.response.documentElement.innerHTML&&n.response.documentElement.innerHTML.length+28;break;default:l=n.response.length}e.mta("send",i,{url:n._url,method:n._method,error:!(0===n.status.toString().indexOf("2")||304===n.status),responseTime:(new Date).getTime()-n._startTime,requestSize:n._searchLength+(t?t.length:0),responseSize:l||0})}}if(o in this){var r=function(e){n(this,e)};this[o]("load",r),this[o]("error",r),this[o]("abort",r)}else{var i=this[a];this[a]=function(t){i&&i.apply(this,arguments),4===this.readyState&&e.mta&&n(this,t)}}return h.apply(this,arguments)}}}}(window,window.XMLHttpRequest,"mta");
+if (!isOffline) {
+    mta("create","57e9f41e075b5612fa17bc3c");
+} else {
+    mta("create", "563089666a354f0238bec49d");
+}
+mta("config", "beaconImage", "https://frep.meituan.com/_.gif");
+mta("send","page");
+</script>
+
+<script>
+    !function(e,n,t,o){function r(){return a._LXALogNTObject?"hybrid":o?o:/\b(mobile|iphone|htc)\b/gi.test(b)?"mobile":"web"}var a=window,i=document,c="_MeiTuanALogObject";if(a[c]=t,!a[t]){var s=function(){return s.q.push(arguments),s};s.q=s.q||[],s.v=n,s.l=+new Date,s.C=o,a[t]=a[t]||s;var u=i.getElementsByTagName("head")[0],l=i.createElement("script"),b=navigator.userAgent.toLocaleLowerCase(),g=r(),d="";d=e.length-3===e.indexOf(".js")?e:["//",e,"/source/",n,"/",g,".","js"].join(""),l.defer=l.async=!0,l.charset="utf-8",l.src=d,l.onload=l.onerror=function(){},u.appendChild(l)}}("analytics.meituan.com","stable","Analytics","");
+    var ST = window.ST || {};
+    ST.count = {
+        init: function () {
+            Analytics('config', 'appnm', 'www');
+            Analytics('use', 'traffic');
+        },
+        send: {
+            mge: function (v) {
+                var data = {nm: 'mge'}, prop, needConvertProp = ['bid', 'cid', 'act', 'lab', 'val'];
+                for (prop in v) {
+                    // 兼容mge埋点的传参方式
+                    if (needConvertProp.indexOf(prop) !== -1) {
+                        data['val_' + prop] = v[prop];
+                    }
+                    else {
+                        data[prop] = v[prop];
+                    }
+                }
+                Analytics('event', data);
+            }
+        },
+        tag: function (t, v) {
+            Analytics('tag', t, v);
+        }
+    };
+    ST.count.init();
+</script>
+<!--<script src="http://awp-assets.meituan.net/hfe/fep/83ee66a8613276418bc38dc0272479ae.js"></script>-->
+
+<script>
+    (function (){
+        var ua = (navigator && navigator.userAgent) || '',
+            classText = document.documentElement.className;
+        if (/dianping/.test(ua) || /m\.dianping/.test(window.location.host)) {
+            document.write('<link rel="stylesheet" href="http://mc.meituan.net/hotel/train/skin/orange-a152dc70.css" />');
+            document.documentElement.className = (classText ? ' ' : '') + 'orange';
+        }
+    })()
+</script>
+
+        <script>!function(){var e=function(){var e="xxxxxxxxxxxx4xxxyxxxxxxxxxxxxxxx".replace(/[xy]/g,function(e){var r=16*Math.random()|0,n="x"===e?r:3&r|8;return n.toString(16)});return e},r=function(e){return Object.keys(e).map(function(r){var n=encodeURIComponent(r),t=encodeURIComponent(e[r]);return n+"="+t}).join("&")},n=Date.now(),t="http://sentry7.meituan.com/api/261/store/?",a=function(a){if(!(Math.random()>.01)){var o={sentry_version:"4",sentry_client:"raven-js/custom",sentry_key:"fdcb4c92ede04fca844a8b8f0add4dbd",sentry_data:JSON.stringify({project:261,logger:"javascript",platform:"javascript",tags:{type:"resource-load-error"},extras:{"session:duration":Date.now()-n},event_id:e(),message:a,request:{url:location.href,headers:{"User-Agent":navigator.userAgent,Referer:document.referrer}}})},x=t+r(o),s=document.createElement("img");s.src=x}};window.__sendMSG=a}();</script><link rel="stylesheet" href="http://mc.meituan.net/hotel/train/common/commons-aae81a96.css" onerror="__sendMSG('http://mc.meituan.net/hotel/train/common/commons-aae81a96.css')">
+        <link rel="stylesheet" href="http://mc.meituan.net/hotel/train/book/search-d5d405e4.css" onerror="__sendMSG('http://mc.meituan.net/hotel/train/book/search-d5d405e4.css')">
+        <title>火车票</title>
+    </head>
+    <body id="searchbody" data-log-cid="前置筛选页—火车票">
+        <!-- 暂不要 纯i版才要导航
+
+<header class="navbar ">
+    <div class="nav-wrap-left">
+        <a class="react back" ><i class="text-icon icon-back"></i></a>
+    </div>
+
+    <h1 class="nav-header">火车票</h1>
+
+    <div class="nav-wrap-right">
+        <a class="react" href="/account/"><span class="nav-btn"><i class="text-icon">⍥</i>我的</span></a>
+    </div>
+</header>
+
+-->
+
+        <div class="main">
+            <div class="downloadApp hide">
+                <div class="item left">
+                    <img class="close closeImg" id="download-close" src="" alt="">
+                    <img class="download downloadImg" src="" alt="">
+                    <div class="title">
+                        <p>购票 抢票 查余票</p>
+                        <p>超级火车票APP</p>
+                    </div>
+                </div>
+                <div class="item right">
+                    <button id="download-app" class="downbtn">免费下载</button>
+                </div>
+            </div>
+            <!-- 成人票默认必须有banner，学生票没banner，不能跳动 -->
+            <div class="slide" id="banner_swipe">
+                <ul>
+                    <li id="defaultImg"><img src=""></li>
+                </ul>
+                <div class="slide-dots">
+                </div>
+                <div class="nav-wrap hide">
+                    <div class="nav-glass">
+                        <div class="nav-top">
+                            <div class="nav-top-cell nav-top-train">
+                                <a class="nav-top-item default-selected" data-log-act="点击火车票tab">
+                                    <span class="nav-top-item-text">火车票</span>
+                                </a>
+                            </div>
+                            <div class="nav-top-cell nav-top-triangle">
+                                <a class="triangle"></a>
+                            </div>
+                            <div class="nav-top-cell nav-top-flight">
+                                <a class="nav-top-item flight" href="imeituan://www.meituan.com/flight/homepage?flightsource=_bmthomecate" data-log-act="点击飞机票tab">
+                                    <span class="nav-top-item-text">飞机票</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navTop hide">
+                <a class="nav-top-item default-selected" data-log-act="点击火车票tab">
+                    <span class="nav-top-item-text">火车票</span>
+                </a>
+                <a class="nav-top-item flight" href="imeituan://www.meituan.com/flight/homepage?flightsource=_bmthomecate" data-log-act="点击飞机票tab">
+                    <span class="nav-top-item-text">飞机票</span>
+                </a>
+            </div>
+
+            <div class="tip">
+                <a class="tipTitle" data-log-act="点击消息通知">
+                    <i class="horn-icon text-icon">ƣ</i>
+                    <span class="tipText"></span>
+                </a>
+                <i class="arrow-icon text-icon">ƻ</i>
+            </div>
+            <div class="search">
+                <div class="searchCity">
+                    <div class="searchCityPair">
+                        <div class="whereFrom">
+                            <div class="searchCityFrom">
+                                <span class="searchCityFromSelect">选择城市</span>
+                            </div>
+                        </div>
+                        <div class="searchCitySwap">
+                            <a class="react"><i class="text-icon">Ƹ</i></a>
+                        </div>
+                        <div class="whereTo">
+                            <div class="searchCityTo">
+                                <div class="searchCityToPair">
+                                    <span class="searchCityToSelect">选择城市</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="searchDay">
+                    <a class="react line">
+                        <span class="lineDay">选择日期</span>
+                        <i class="arrow-icon text-icon">ƻ</i>
+                    </a>
+                </div>
+                <div class="searchType">
+                        <span class="lineValue">只看高铁动车</span>
+                        <input class="tgl-light" id="cbtrainType" type="checkbox">
+                        <label class="tgl-btn" for="cbtrainType"></label>
+                </div>
+            </div>
+            <div class="searchBtn">
+                <button class="btn btn-block btn-strong train-btn-larger" type="button">查询</button>
+            </div>
+            <div class="recent">
+
+            </div>
+            <!--
+            {@helper JSONStringify}
+                function JSONStringify(json) {
+                    return JSON.stringify(json);
+                }
+            {@/helper}
+            -->
+            <script id="tpl-history-search" type="text/template">
+                {@if (_ && _.length)}
+<div class="recentListdiv">
+    <div class="recentListWrapper">
+<ul class="recentList">
+    {@each _ as item}
+    <li class="recentItem" data-search='${item | JSONStringify}'>
+        <a class="recentItemWrapper">
+            <span class="recentItemFrom">${item.from_station_name}</span>
+            <div class="recentItemArrow-icon">
+            </div>
+            <span class="recentItemTo">${item.to_station_name}</span>
+        </a>
+    </li>
+    {@/each}
+</ul>
+    </div>
+</div>
+{@/if}
+
+            </script>
+            <div class="to-customer hide">
+              <a href="/trip/train/search/student/"><i class="text-icon">?</i>&nbsp;购买说明</a>
+            </div>
+
+            <div class="navBar">
+                <a class="nav-bar-item qiangpiao is-hidden">
+                    <span class="nav-bar-item-bg-img">
+                        <i class="image-icon-smal">
+                            <svg width="38px" height="38px" viewbox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <!-- Generator: Sketch 3.8.2 (29753) - http://www.bohemiancoding.com/sketch -->
+                                <title>Group 8</title>
+                                <desc>Created with Sketch.</desc>
+                                <defs/>
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="首页banner加dot" transform="translate(-43.000000, -605.000000)">
+                                        <g id="entrance" transform="translate(0.000000, 597.000000)">
+                                            <g id="Group-7" transform="translate(43.000000, 8.000000)">
+                                                <g id="Group-8">
+                                                    <circle id="Oval-17" fill="#F38575" cx="19" cy="19" r="19"/>
+                                                    <rect id="Rectangle-285" fill="#FFFFFF" transform="translate(24.426339, 26.401657) rotate(-46.000000) translate(-24.426339, -26.401657) " x="23.9263389" y="24.9016575" width="1" height="3"/>
+                                                    <rect id="Rectangle-285" fill="#FFFFFF" transform="translate(13.426339, 26.401657) scale(-1, 1) rotate(-46.000000) translate(-13.426339, -26.401657) " x="12.9263389" y="24.9016575" width="1" height="3"/>
+                                                    <circle id="Oval-110" fill="#FFFFFF" cx="18.8526778" cy="20.8033149" r="7"/>
+                                                    <rect id="Rectangle-283" fill="#F38575" x="19" y="18" width="1" height="5"/>
+                                                    <rect id="Rectangle-283" fill="#F38575" transform="translate(18.000000, 22.500000) rotate(90.000000) translate(-18.000000, -22.500000) " x="17.5" y="20.5" width="1" height="4"/>
+                                                    <path d="M28.2505727,15.3249762 C28.2505727,15.3249762 27.757137,12.5677405 25.285774,12.5677405 C22.8144109,12.5677405 22.2083151,15.3249762 22.2083151,15.3249762 L28.2505727,15.3249762 Z" id="Oval-112" fill="#FFFFFF" transform="translate(25.229444, 13.946358) rotate(38.000000) translate(-25.229444, -13.946358) "/>
+                                                    <path d="M15.2505727,15.3249762 C15.2505727,15.3249762 14.757137,12.5677405 12.285774,12.5677405 C9.81441095,12.5677405 9.2083151,15.3249762 9.2083151,15.3249762 L15.2505727,15.3249762 Z" id="Oval-112" fill="#FFFFFF" transform="translate(12.229444, 13.946358) scale(-1, 1) rotate(38.000000) translate(-12.229444, -13.946358) "/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                            <span class="qiangpiao-icon-content"></span>
+                        </i>
+                    </span>
+                    <span class="nav-bar-item-text">抢票</span>
+                </a>
+                <a class="nav-bar-item student is-hidden" data-log-act="点击学生票">
+                    <span class="nav-bar-item-bg-img">
+                        <i class="xsp image-icon-smal">
+                            <svg width="38px" height="38px" viewbox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <!-- Generator: Sketch 3.8.2 (29753) - http://www.bohemiancoding.com/sketch -->
+                                <title>Group 7</title>
+                                <desc>Created with Sketch.</desc>
+                                <defs/>
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="首页banner加dot" transform="translate(-169.000000, -605.000000)">
+                                        <g id="entrance" transform="translate(0.000000, 597.000000)">
+                                            <g id="Group-7" transform="translate(169.000000, 8.000000)">
+                                                <circle id="Oval-17" fill="#B6D6F5" cx="19" cy="19" r="19"/>
+                                                <path d="M30,18 L30,16.3583928 L30.1142211,16.310721 C30.3650684,16.2060264 30.3711212,16.0280924 30.1087338,15.9043294 L20.1122287,11.1891728 C19.6090914,10.9518527 18.7829456,10.9341437 18.2790308,11.1445861 L7.90957425,15.475028 C7.65513333,15.5812864 7.65520741,15.7566637 7.90037693,15.862695 L19.3369087,20.8087832 L29.2786865,16.659443 L29.2786865,18 L28.9840698,18 L28.9840698,22 L30.2399902,22 L30.2399902,18 L30,18 Z M12.4765625,19.1376953 L11.4004488,23.0915845 C11.3292237,23.353282 11.4732406,23.6786629 11.7096297,23.8113334 L18.3763078,27.5529244 C18.6182888,27.6887333 19.0054479,27.6971027 19.2520048,27.5657843 L26.103464,23.9166376 C26.3451171,23.787931 26.4959394,23.4636762 26.4410002,23.1956399 L25.6064453,19.1240234 L19.6582031,21.7080078 L12.4765625,19.1376953 Z" id="Combined-Shape" fill="#FFFFFF"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </i>
+                    </span>
+                    <span class="nav-bar-item-text">学生票</span>
+                </a>
+                <a class="nav-bar-item myOrders is-hidden">
+                    <span class="nav-bar-item-bg-img">
+                        <i class="dingdan image-icon-smal">
+                            <svg width="38px" height="38px" viewbox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <title>Group 3</title>
+                                <desc>Created with Sketch.</desc>
+                                <defs/>
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="首页banner加dot" transform="translate(-289.000000, -605.000000)">
+                                        <g id="entrance" transform="translate(0.000000, 597.000000)">
+                                            <g id="Group-3" transform="translate(289.000000, 8.000000)">
+                                                <circle id="Oval-17" fill="#95E8D6" cx="19" cy="19" r="19"/>
+                                                <path d="M12,11.9529572 C12,11.4266535 12.4343441,11 12.9403184,11 L25.0596816,11 C25.5790051,11 26,11.4279613 26,11.9529572 L26,26.0470428 C26,26.5733465 25.5656559,27 25.0596816,27 L12.9403184,27 C12.4209949,27 12,26.5720387 12,26.0470428 L12,11.9529572 Z M14.1538462,13.9149798 L23.8461538,13.9149798 L23.8461538,15.8582996 L14.1538462,15.8582996 L14.1538462,13.9149798 Z M14.1538462,17.8016194 L23.8461538,17.8016194 L23.8461538,19.7449393 L14.1538462,19.7449393 L14.1538462,17.8016194 Z M14.1538462,21.6882591 L23.8461538,21.6882591 L23.8461538,23.6315789 L14.1538462,23.6315789 L14.1538462,21.6882591 Z" id="Combined-Shape" fill="#FFFFFF"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </i>
+                    </span>
+                    <span class="nav-bar-item-text">订单</span>
+                </a>
+                <a class="nav-bar-item service is-hidden" href="../customer" data-log-act="点击常见问题">
+                    <span class="nav-bar-item-bg-img"><i class="wt wt-min-icon image-icon-smal"></i></span>
+                    <span class="nav-bar-item-text">问题</span>
+                </a>
+            </div>
+        </div>
+        <div id="meituan_check"><br><br><br></div>
+
+        <script src="http://mc.meituan.net/hotel/train/vendors/vendor-da6550aa.js" onerror="__sendMSG('http://mc.meituan.net/hotel/train/vendors/vendor-da6550aa.js')"></script>
+        <script src="http://mc.meituan.net/hotel/train/common/commons-bce65024.js" onerror="__sendMSG('http://mc.meituan.net/hotel/train/common/commons-bce65024.js')"></script>
+        <script src="http://mc.meituan.net/hotel/train/common/book_commons-4ee303c3.js" onerror="__sendMSG('http://mc.meituan.net/hotel/train/common/book_commons-4ee303c3.js')"></script>
+        <script async="async" src="http://mc.meituan.net/hotel/train/book/search-8600a502.js" onerror="__sendMSG('http://mc.meituan.net/hotel/train/book/search-8600a502.js')"></script>
+    </body>
+</html>

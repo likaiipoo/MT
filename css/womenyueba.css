@@ -1,0 +1,266 @@
+
+
+.mt_layout {
+	min-width: 3.2rem;
+	/*border: 1px solid black;*/
+	margin: 0 auto;
+	position: relative;
+	/*background: white;*/
+}
+
+
+.navbar {
+	z-index: 555;
+	width: 100%;
+    height: .505rem;
+    color: #fff;
+    background: #2bb2a3;
+    border-bottom: .01rem solid #21897d;
+    position: relative;
+}
+.navbar .nav-wrap-left {
+	position: absolute;
+    height: .505rem;
+  	width: .5rem;
+    line-height: .505rem;
+}
+.nav-wrap-left a{
+	display: block;
+}
+
+.nav-wrap-left a.back {
+	display: block;
+    height: .5rem;
+    width: .225rem;
+    line-height: .5rem;
+    padding: 0 .15rem;
+}
+.nav-wrap-left a.back i{
+	
+	font-size: .3rem;
+	position: absolute;
+	color: white;
+}
+.nav-header{
+	width: 100%;
+    font-size: .18rem;
+	position: absolute;
+    text-align: center;
+    line-height: .5rem;
+    /*padding-right:1rem;*/
+}
+.nav-wrap-right{
+	font-size: .18rem;
+	position: absolute;
+	right: 0;
+	height: 100%;
+}
+.nav-wrap-right a {
+	display: block;
+    margin-right: .1rem;
+}
+.nav-btn {
+
+	color: white;
+    display: inline-block;
+    font-size: .12rem;
+    line-height: 1;
+    vertical-align: middle;
+}
+.nav-btn i{
+	
+    display: block;
+    margin: auto;
+    margin-bottom: .07rem;
+    font-size: .3rem;
+}
+
+section{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.detailarea>div{
+	flex: 1;
+	
+}
+.article{
+	background: white;
+	margin-bottom: .1rem;
+	color: #333;
+    padding: .1rem;
+    word-break: break-all;
+  
+}
+.article p{
+ height: .16rem;
+margin: 0;
+}
+.article p span{
+display: block;
+	font-size: .16rem;
+}
+
+
+
+.flex {
+	margin-top: -.1rem;
+	display: flex;
+    background: white;
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 0.1rem;
+    padding: 0 0.06rem 0.1rem 0.01rem;
+}
+.flex-wrapper{
+	flex: 1;
+	margin: 0;
+	overflow: hidden;
+}
+.flex .huodong-banner{
+	position: relative;
+    margin: 0 0.04rem 0.03rem;
+      width: 100%;
+    overflow: hidden;
+    display: block;
+    max-width: 12.8rem;
+}
+.huodong-banner img{
+	width: 100%;
+	display: block;
+}
+
+
+.flex-wrapper a .huodong{
+    position: absolute;
+    z-index: 999;
+    color: white;
+    display: block;
+    bottom: .1rem;
+    font-size: .14rem;
+    left: .1rem;
+    opacity: .8;
+}
+.huodong-banner:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0.7rem;
+    position: absolute;
+    bottom: 0;
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,0)),to(rgba(0,0,0,0.4)));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+	margin: 0 auto;
+	position: absolute;
+    bottom: -1.5rem;
+    left: 0;
+    width: 100%;
+  
+    font-size: .24rem;
+		/*max-width: 8rem;*/
+	
+	
+	
+	
+	
+	
+	
+}
+.footer-btn-warpper{
+width: 100%;
+
+}
+.footer-btn-login{
+	border: 1px solid #2bb2a3;
+    color: #2bb2a3;
+    display: block; 
+	height: .3rem;
+    line-height: .3rem;
+    font-size: .14rem;
+    width: .6rem;
+    display: inline-block;
+    text-align: center;
+}
+
+.footer-btn-reg{
+	border: 1px solid #2bb2a3;
+    color: #2bb2a3;
+    display: block; 
+	height: .3rem;
+    line-height: .3rem;
+    font-size: .14rem;
+    width: .6rem;
+    display: inline-block;
+    text-align: center;
+}
+.footer-links{
+	font-size: .12rem;
+	display: flex;
+    margin: .24rem 0;
+}
+.footer-links li {
+	 display: block;
+    -webkit-box-flex: 1;
+    flex: 1;
+    text-align: center;
+    
+    border-right: 1px solid #e5e5e5;
+
+}
+.footer-links li a{
+	color: #06c1ae;
+}
+.footer-friend{
+	font-size: .12rem;
+	 display: block;
+    width: 100%;
+    text-align: center;
+    margin: .12rem 0;
+}
+.footer-friend a{
+	color: #06c1ae;
+}
+.footer-icp{
+    font-size: .12rem;
+	
+display: block;
+    text-align: center;
+    margin: .12rem 0;
+    position: relative;
+}
+
+.footer-icp .footer-icp-text{
+	background: #f0efed;
+    display: inline-block;
+    padding: 0 .15rem;
+    color: #999;
+
+}
+.footer-icp-text a{
+	color: #999;
+}
+.footer-icp :after{
+	
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: .01rem;
+    background: #999;
+    left: 0;
+    top: 50%;
+    z-index: -1;
+}

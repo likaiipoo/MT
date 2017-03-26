@@ -1,0 +1,17 @@
+*, ::before, ::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	-webkit-tap-highlight-color: transparent
+}
+body {
+	font-family: '微软雅黑', sans-serif;
+	position: relative;
+	background-color: #f0efed
+}
+a {
+	text-decoration: none
+}
+ul, li {
+	list-style: none
+}
